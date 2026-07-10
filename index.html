@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="welcome-screen">
+
+    <div class="welcome-card">
+
+        <h1>👋 Welcome</h1>
+
+        <p>What should we call you?</p>
+
+        <input
+            type="text"
+            id="usernameInput"
+            placeholder="Enter your name"
+        >
+
+        <button id="enterBtn">
+            Enter →
+        </button>
+
+    </div>
+
+</div>
+        <div class="overlay"></div>
+        <nav>
+            <div class="profile">
+                <div>
+                    <p>Hello</p>
+                    <p class="username">Jay</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYWQgzUJIkdiEJF2OaoEHsKb65AdVO-9rkyZ3F4LImyQ&s=10"
+                    alt="">
+            </div>
+        </nav>
+
+        <div class="center">
+            <div class="center-left">
+
+                <div class="date-time">
+                    <h3 id="date"></h3>
+                    <h2 id="time"></h2>
+                </div>
+
+                <div class="card">
+                    <h1>Weather🌤️</h1>
+                    <h2 id="city">city</h2>
+                    <div class="city-temp">
+                        <h3 id="temp">--°C</h3>
+                        <p id="weather">Loading...</p>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+
+                    <div class="detail-card">
+                        <h3>🌬 Wind</h3>
+                        <p id="wind">-- m/s</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>💧 Humidity</h3>
+                        <p id="humidity">--%</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>👁 Visibility</h3>
+                        <p id="visibility">-- km</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="quote-card">
+                    <p id="quote">Loading...</p>
+                    <h4 id="author"></h4>
+                </div>
+            </div>
+
+            <div class="center-right">
+                <div class="todo">
+                    <div class="glass-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenkWKg3Dh9n0KgJTS_lsB3_U2RyJtG-S7R1n3V_cBPQ&s=10"
+                            alt="">
+                        <h2>TODO</h2>
+                    </div>
+                </div>
+
+                <div class="todoFull">
+                    <div class="todo-header">
+                        <h1>Manager your tasks here</h1>
+                        <div><span class="close">X</span></div>
+                    </div>
+
+                    <div class="todo-footer">
+                        <div class="todo-footer-left">
+                            <h4>Tasks</h4>
+
+                            <div class="todo-status">
+                                <p>All</p>
+                                <p>Completed</p>
+                                <p>Working</p>
+                                <p>Pending</p>
+                            </div>
+                        </div>
+
+                        <div class="todo-footer-right">
+
+                            <div class="todo-search">
+                                <input type="text" id="search" placeholder="Search">
+                            </div>
+
+                            <form class="todo-form">
+                                <input type="text" id="task" placeholder="Enter task">
+
+                                <select id="status">
+                                    <option value="Pending">Pending</option>
+                                    <option value="Working">Working</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+
+                                <input class="submit-btn" type="submit" value="Submit">
+                            </form>
+
+                            <div class="task-cards-container">
+                                <h1>No Task Created Yet</h1>
+                                <div class="task-card">
+                                    <div class="task-text">
+                                        <h3 class="taskname">elem.taskName</h3>
+                                        <h3 class="taskstatus">elem.taskStatus</h3>
+                                    </div>
+
+                                    <div class="task-btns">
+                                        <button>
+                                            Edit
+                                        </button>
+
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="planner">
+                    <div class="glass-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKAryICTYU6HEupYI-WQIrrEyKtcykX_jelTfe5E0fiA&s=10"
+                            alt="">
+                        <h2>Planner</h2>
+                    </div>
+                </div>
+                <div class="plannerFull">
+                    <div><span class="close2">X</span></div>
+
+                    <div class="planner-container">
+
+                        <div class="planner-header">
+
+                            <h1>Daily Planner</h1>
+
+                            <p id="todayDate"></p>
+
+                        </div>
+
+                        <div class="planner-slots">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pomodoro">
+                    <div class="glass-card">
+                        <img src="https://t4.ftcdn.net/jpg/20/19/44/23/360_F_2019442331_Na90w8EbWBY1rYsIiOirJjCqfgZNkQnl.jpg"
+                            alt="">
+                        <h2>Pomodoro</h2>
+                    </div>
+                </div>
+                <div class="pomodoroFull">
+                    <div><span class="close3">X</span></div>
+
+                    <div class="pomodoroFull-top">
+
+                        <div class="pomodoro-header">
+                            <h1>POMODORO <span>TIMER</span></h1>
+                            <p>FOCUS • WORK • ACHIEVE</p>
+                        </div>
+                    </div>
+
+                    <div class="pomodoroFull-bottom">
+                        <div class="pomodoro-body">
+
+                            <div class="stats-card">
+                                <h2>🎯</h2>
+                                <p>SESSIONS</p>
+                                <h1>0</h1>
+                                <span>Completed</span>
+                            </div>
+
+                            <div class="timer-section">
+
+                                <div class="progress-ring">
+
+                                    <svg width="300" height="300">
+
+                                        <circle class="bg" cx="155" cy="150" r="135">
+                                        </circle>
+
+                                        <circle class="progress" cx="155" cy="150" r="135">
+                                        </circle>
+
+                                    </svg>
+
+                                    <div class="timer-content">
+                                        <p>FOCUS TIME</p>
+                                        <h1 id="timer">25:00</h1>
+                                        <small>Time to focus!</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="buttons">
+                                    <button class="start">START</button>
+                                    <button class="reset">⟳</button>
+                                </div>
+
+                            </div>
+
+                            <div class="stats-card">
+                                <h2>🔥</h2>
+                                <p>STREAK</p>
+                                <h1>0</h1>
+                                <span>Days</span>
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-menu">
+
+                            <div>
+                                <h3>☕ Short Break</h3>
+                                <p>5 min</p>
+                            </div>
+
+                            <div>
+                                <h3>🍵 Long Break</h3>
+                                <p>15 min</p>
+                            </div>
+
+                            <div>
+                                <h3>✏️ Custom</h3>
+                                <p>Edit</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="goal">
+                    <div class="glass-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZk7XgjNrRlNQIyyYSUPZcFUPN-J0kBPNvwssAP2V9A&s=10"
+                            alt="">
+                        <h2>Goal</h2>
+                    </div>
+                </div>
+                <div class="goalFull">
+                    <div><span class="close4">X</span></div>
+
+                    <div class="goal-container">
+                        <form class="goal-form">
+                            <input type="text" id="task" placeholder="New Goal">
+
+                            <select id="goal-status">
+                                <option value="long-term">Long Term</option>
+                                <option value="Short-term">Short Term</option>
+                            </select>
+
+                            <input class="create-btn" type="submit" value="Create">
+                        </form>
+
+                        <div class="goal-card-container">
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

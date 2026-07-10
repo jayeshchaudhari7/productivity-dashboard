@@ -149,15 +149,14 @@ let tasksArr = JSON.parse(localStorage.getItem("tasks")) || [];
 let editIdx = null;
 
 function ui(data = tasksArr) {
-  taskContainer.innerHTML = "";
-
   if (data.length === 0) {
     taskContainer.innerHTML = "<h1>No Task Created Yet</h1>";
     return;
   }
 
-  data.forEach((elem, idx) => {
-    taskContainer.innerHTML += `
+  taskContainer.innerHTML = data
+    .map(
+      (elem, idx) => `
         <div class="task-card">
           <div class="task-text">
             <h3 class="taskname">${elem.taskName}</h3>
@@ -166,22 +165,17 @@ function ui(data = tasksArr) {
 
           <div class="task-btns">
             <div class="completedTask" onclick="completeTask(${idx})">
-              <img  src="https://cdn-icons-png.flaticon.com/512/6459/6459980.png"/>
+              <img src="https://cdn-icons-png.flaticon.com/512/6459/6459980.png"/>
             </div>
 
-            <button onclick="editTask(${idx})">
-              Edit
-            </button>
-
-            <button onclick="deleteTask(${idx})">
-              Delete
-            </button>
+            <button onclick="editTask(${idx})">Edit</button>
+            <button onclick="deleteTask(${idx})">Delete</button>
           </div>
         </div>
-        `;
-  });
+      `
+    )
+    .join("");
 }
-
 ui();
 
 form.addEventListener("submit", (e) => {

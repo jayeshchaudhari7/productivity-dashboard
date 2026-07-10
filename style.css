@@ -287,7 +287,7 @@ nav {
 }
 
 #quote {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #author {
   display: flex;
@@ -335,7 +335,7 @@ nav {
   border-right: 1px solid white;
 }
 .todo-footer-left h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ff5d52;
 }
 .todo-status {
@@ -344,7 +344,7 @@ nav {
   gap: 1rem;
 }
 .todo-status p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .todo-footer-right {
@@ -414,10 +414,11 @@ nav {
 }
 
 .taskname {
-  font-size: 20px;
+  font-size: 1rem;
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .taskstatus {
@@ -430,9 +431,9 @@ nav {
   background: rgba(255, 255, 255, 0.15);
 
   color: #fff;
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  
 
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -460,7 +461,7 @@ nav {
 
   color: white;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1rem;
 
   background: rgba(255, 255, 255, 0.15);
 
@@ -644,7 +645,7 @@ select {
 
 .goal-text h3 {
   color: white;
-  font-size: 22px;
+  font-size: 1rem;
 }
 
 /* STATUS */

@@ -138,6 +138,7 @@ getQuote();
 
 
 
+
 const todoStatus = document.querySelector(".todo-status");
 const statusItems = document.querySelectorAll(".todo-status p");
 const form = document.querySelector(".todo-form");
@@ -164,6 +165,10 @@ function ui(data = tasksArr) {
           </div>
 
           <div class="task-btns">
+            <div class="completedTask" onclick="completeTask(${idx})">
+              <img  src="https://cdn-icons-png.flaticon.com/512/6459/6459980.png"/>
+            </div>
+
             <button onclick="editTask(${idx})">
               Edit
             </button>
@@ -223,6 +228,15 @@ function deleteTask(idx) {
 
   ui();
 }
+
+function completeTask(idx){
+  tasksArr[idx].taskStatus = "Completed";
+
+  localStorage.setItem("tasks", JSON.stringify(tasksArr));
+
+  ui();
+}
+
 
 todoStatus.addEventListener("click", (e) => {
   if (e.target.tagName !== "P") return;

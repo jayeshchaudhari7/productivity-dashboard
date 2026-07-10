@@ -421,6 +421,16 @@ nav {
   text-transform: uppercase;
 }
 
+.completedTask{
+  width: 50px;
+  height: 50px;
+  padding: 0%;
+}
+.completedTask img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .taskstatus {
   width: fit-content;
 
@@ -737,7 +747,7 @@ select {
   padding: 35px;
 
   overflow-y: auto;
-
+  scrollbar-width: none;
   background: rgba(255, 255, 255, 0.08);
 
   backdrop-filter: blur(20px);
@@ -761,7 +771,7 @@ select {
 
 .planner-slots {
   display: flex;
-
+  
   flex-direction: column;
 
   gap: 15px;

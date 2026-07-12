@@ -857,7 +857,7 @@ select {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 2rem;
+  gap: 1.5rem;
   background: rgba(0, 0, 0, 0.614);
   backdrop-filter: blur(18px);
 }
@@ -874,7 +874,8 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap:20px;
+  overflow: hidden;
 }
 
 .close,
@@ -898,14 +899,13 @@ select {
 .show {
   display: flex;
 }
-/* pomodoro */
 
 .pomodoro-header {
   text-align: center;
 }
 
 .pomodoro-header h1 {
-  font-size: 35px;
+  font-size: 20px;
   letter-spacing: 8px;
   font-weight: 300;
 }
@@ -922,15 +922,14 @@ select {
 
 .pomodoro-body {
   width: 90%;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .stats-card {
-  width: 160px;
-  height: 200px;
+  width: 140px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -952,7 +951,7 @@ select {
 }
 
 .stats-card h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .stats-card p {
@@ -966,8 +965,8 @@ select {
 
 .progress-ring {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 svg {
@@ -1006,7 +1005,7 @@ svg {
 }
 
 .timer-content h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -1063,13 +1062,9 @@ svg {
 
 .bottom-menu {
   width: 700px;
-
   display: flex;
-
   justify-content: space-around;
-
-  padding: 25px;
-
+  padding: 15px;
   border-radius: 25px;
 
   background: rgba(255, 255, 255, 0.05);

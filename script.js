@@ -75,6 +75,9 @@ close4.addEventListener("click", () => {
 
 
 
+const apiKey = "bd5e378503939ddaee76f12ad7a97608";
+
+
 function updateDateTime() {
   const now = new Date();
   document.getElementById("time").innerHTML = now.toLocaleTimeString();
